@@ -1,11 +1,11 @@
 # Creality CR-6 MAX custom cura profile
 
-**PLEASE NOTE: There is no warranty or guarantee that this will work for you. I did this for educational purposes and have decided to share my experiene and observations.**
+**PLEASE NOTE: There is no warranty or guarantee that this will work for you. I did this for educational purposes and have decided to share my experience and observations.**
 
 So, for a long time I went with the CR6 SE profile in CURA and then re-sized the plate after selecting it. 
 It works fine for the most  part. However, something kept messing up with that and it still bugged me that it "Wasn't a MAX" profile. There were instances where the settings reverted to the default CR-6 SE profile and it messed things up royally when the bed thought it was the wrong size. It worked for the most part, but OCD kept bugging me that it wasn't a "MAX" profile. 
 
-So i looked a bit into how profiles work in Cura and figured out that Cura uses a stacked profile system where different components/dependancies are slightly modified from a referenced "default profile" so to speak. If you run through the files in "resources" where cura is installed, and check it out, its enlightening how it works.
+So i looked a bit into how profiles work in Cura and figured out that Cura uses a stacked profile system where different components/dependencies are slightly modified from a referenced "default profile" so to speak. If you run through the files in "resources" where cura is installed, and check it out, its enlightening how it works.
 
 Here are the refs I found:
 
@@ -41,4 +41,4 @@ thank you Sebazzz!
 
 Your custom files should be placed in %appdata%\Roaming\cura\5.1\ (or whatever versions were on now). 
 
-**PLEASE NOTE: There is no warranty or guarantee that this will work for you. I did this for educational purposes and have decided to share my experiene and observations.**
+**PLEASE NOTE: There is no warranty or guarantee that this will work for you. I did this for educational purposes and have decided to share my experience and observations.**
