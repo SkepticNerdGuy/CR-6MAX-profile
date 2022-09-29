@@ -18,7 +18,7 @@ The "Instructions" are geared more for printer manufacturers and state to do a p
 I figured out that these profiles "Live" in `C:\Program Files\Ultimaker Cura 5.1.0\share\cura\resources\` and in various sub-directories. However you shouldn't use this for custom files, they will get erased in any update, iirc. 
 I created a custom files after looking how the CR-6 SE profile works. And after some trial and error, i found out it requires a [printer]_0.2.inst.cfg for each nozzle size needed. So i just copied the same for the CR-6 SE profile and renamed and edited it as needed. Most of the work is done as it a lot references the creality_base profile. See further down on the layout of the custom files needed.
 
-So instead of placing my custom printer profile in the the base install I found that if you place them in `C:\Users\YOURUSERNAME\AppData\Roaming\cura\5.1\` there is an equivalent structure here where your settings, profiles, plugins and other stuff are saved as well. This is where custom versions of profiles can safely be placed for use.
+So instead of placing my custom printer profile in the base install I found that if you place them in `C:\Users\YOURUSERNAME\AppData\Roaming\cura\5.1\` there is an equivalent structure here where your settings, profiles, plugins and other stuff are saved as well. This is where custom versions of profiles can safely be placed for use.
 
 I created the necessary base files for the MAX which I figured out were:
 
