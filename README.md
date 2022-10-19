@@ -2,6 +2,55 @@
 
 **PLEASE NOTE: There is no warranty or guarantee that this will work for you. I did this for educational purposes and have decided to share my experience and observations.**
 
+## BLUF: INSTALL INSTRUCTIONS
+
+First thing, Make sure Cura is closed.
+
+
+**Optional:** You may want to start with a "clean" setup by deleting all profile settings. In order to do this, simply delete the "cura" folders in
+
+```
+%appdata%\Roaming\
+%appdata%\Local\
+```
+
+You can make copies of these folders first to be able to restore your old profiles if this doesn't work out.
+
+Once these files are deleted, re-open Cura. 
+
+All settings should be gone, you will be prompted to do all initial setup and add a printer. Pick any printer for now, it doesn't matter. Don't do any customization. Starting cura rebuilds the folder structure in `%appdata%\Roaming\cura\5.x\` 
+
+**Start here if you dont do optional steps above**
+
+Copy the "definitions" and "variants" folders to %appdata%\Roaming\cura\5.x\ 
+
+"x" is your version of cura. I have tested this with 5.1 and 5.2
+
+This should place the following files in `%appdata%\Roaming\cura\5.x\...`
+
+```
+\definitions\creality_cr6max.def.json
+
+\variants\creality_cr6max_0.2.inst.cfg
+\variants\creality_cr6max_0.3.inst.cfg
+\variants\creality_cr6max_0.4.inst.cfg
+\variants\creality_cr6max_0.5.inst.cfg
+\variants\creality_cr6max_0.6.inst.cfg
+\variants\creality_cr6max_0.8.inst.cfg
+\variants\creality_cr6max_0.2.inst.cfg
+\variants\creality_cr6max_1.0.inst.cfg
+```
+
+once files are there, open cura and add new printer. 
+
+A printer listed as "Creality CR-6 MAX" should be listed as an option. Select this as your printer. 
+
+Check defaults, should be a 400x400x400 print volume with some custom start/stop gcode.
+
+done. 
+
+## Background stuff and explanation
+
 So, for a long time I went with the CR6 SE profile in CURA and then re-sized the plate after selecting it. 
 It works fine for the most  part. However, something kept messing up with that and it still bugged me that it "Wasn't a MAX" profile. There were instances where the settings reverted to the default CR-6 SE profile and it messed things up royally when the bed thought it was the wrong size. It worked for the most part, but OCD kept bugging me that it wasn't a "MAX" profile. 
 
